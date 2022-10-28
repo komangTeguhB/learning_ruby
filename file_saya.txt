@@ -1,0 +1,3 @@
+saya sedang belajar ruby
+ruby is great
+ruby is good
