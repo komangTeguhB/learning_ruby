@@ -24,13 +24,19 @@ class FacebookConnection < ApiConnection
     1
   end
 
-  def status
-    :connected
+  # def status
+  #   :connected
+  # end
+
+  def connect
+    super
+    puts 'connection established'
   end
+
 end
 
 facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
-#facebook_connection.connect
+facebook_connection.connect
 status = facebook_connection.status
 version = facebook_connection.version
 puts version
