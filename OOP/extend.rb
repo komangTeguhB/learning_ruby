@@ -9,7 +9,7 @@ module Loggable
 end
 
 class Person
-  include Loggable
+  extend Loggable
 
   def print
     puts 'I am a person'
@@ -17,14 +17,5 @@ class Person
 end
 
 person = Person.new
-person.print
-person.log
-person.info
-
-
-class Bus
-  include Loggable
-end
-
-bus = Bus.new
-bus.log
+Person.log
+Person.info
