@@ -15,3 +15,11 @@ end
 person = Person.new
 person.print
 person.log
+
+
+class Bus
+  include Loggable
+end
+
+bus = Bus.new
+bus.log
